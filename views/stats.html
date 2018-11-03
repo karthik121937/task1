@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stats</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="personCtrl">
+
+<h3>Overall Stats</h3>
+<table ng-show="display" class="table table-bordered">
+    <thead>
+    <th>Method</th>
+        <th>No.of Requests</th>
+        <th>Response Time</th>
+    </thead>
+    <tr ng-repeat="i in statRes">
+        <td>{{i._id}}</td>
+        <td>{{i.requests}}</td>
+        <td>{{(i.avg / 1000).toFixed(0)}}</td>
+    </tr>
+</table>
+
+<h3>Method Stats</h3>
+<table ng-show="display" class="table table-bordered">
+    <thead>
+    <th>Method</th>
+    <th>No.of Requests</th>
+    </thead>
+    <tr ng-repeat="i in statRes">
+        <td ng-show="i._id!='overall'">{{i._id}}</td>
+        <td ng-show="i._id!='overall'">{{i.requests}}</td>
+    </tr>
+</table>
+
+<h3>Hour Stats</h3>
+<table ng-show="display" class="table table-bordered">
+    <thead>
+    <th>Hour</th>
+    <th>Method</th>
+    <th>No.of Requests</th>
+    <th>Response Time</th>
+    </thead>
+    <tr ng-repeat="i in hourRes">
+        <td>{{i.hour * 1000 | date: 'H'}}</td>
+        <td>{{i.source}}</td>
+        <td>{{i.requests}}</td>
+        <td>{{(i.avg / 1000).toFixed(0)}}</td>
+    </tr>
+</table>
+
+<h3>Minute Stats</h3>
+<table ng-show="display" class="table table-bordered">
+    <thead>
+    <th>Minute</th>
+    <th>Method</th>
+    <th>No.of Requests</th>
+    <th>Response Time</th>
+    </thead>
+    <tr ng-repeat="i in minRes">
+        <td>{{i.minute * 1000 | date: 'H'}}: {{i.minute * 1000 | date: 'mm'}}</td>
+        <td>{{i.source}}</td>
+        <td>{{i.requests}}</td>
+        <td>{{(i.avg / 1000).toFixed(0)}}</td>
+    </tr>
+</table>
+
+
+
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('personCtrl', function($scope,$http) {
+        $scope.dispaly = false;
+        function getStats() {
+            $http({
+                method: 'GET',
+                url: 'getStats'
+            }).then(function successCb(res){
+                console.log(res);
+                $scope.statRes = res.data.overall;
+                $scope.hourRes = res.data.hourstats;
+                $scope.minRes = res.data.minstats;
+                $scope.display = true;
+            },function errorCb(err) {
+
+            })
+        }
+        getStats();
+        setInterval(getStats,15000);
+    });
+</script>
+</body>
+</html>
