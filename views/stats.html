@@ -15,7 +15,7 @@
     <thead>
     <th>Method</th>
         <th>No.of Requests</th>
-        <th>Response Time</th>
+        <th>Response Time(Secs)</th>
     </thead>
     <tr ng-repeat="i in statRes">
         <td>{{i._id}}</td>
@@ -42,7 +42,7 @@
     <th>Hour</th>
     <th>Method</th>
     <th>No.of Requests</th>
-    <th>Response Time</th>
+    <th>Response Time(Secs)</th>
     </thead>
     <tr ng-repeat="i in hourRes">
         <td>{{i.hour * 1000 | date: 'H'}}</td>
@@ -58,7 +58,7 @@
     <th>Minute</th>
     <th>Method</th>
     <th>No.of Requests</th>
-    <th>Response Time</th>
+    <th>Response Time(Secs)</th>
     </thead>
     <tr ng-repeat="i in minRes">
         <td>{{i.minute * 1000 | date: 'H'}}: {{i.minute * 1000 | date: 'mm'}}</td>
