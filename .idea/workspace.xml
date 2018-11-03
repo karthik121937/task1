@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80657f5d-6f5a-4643-a6c3-129f72dcb51a" name="Default Changelist" comment="" />
+    <list default="true" id="80657f5d-6f5a-4643-a6c3-129f72dcb51a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/babel-types/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/babel-types/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/babylon/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/babylon/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uglify-to-browserify/.npmignore" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-to-browserify/.npmignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uglify-to-browserify/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-to-browserify/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uglify-to-browserify/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-to-browserify/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uglify-to-browserify/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-to-browserify/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uglify-to-browserify/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-to-browserify/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uglify-to-browserify/test/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-to-browserify/test/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/window-size/LICENSE-MIT" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/window-size/LICENSE-MIT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/window-size/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/window-size/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/window-size/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/window-size/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/with/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/with/LICENSE" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,9 +31,10 @@
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -34,13 +49,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="html" value="6" />
           <entry key="js" value="1998" />
+          <entry key="txt" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="HTML" value="6" />
           <entry key="JavaScript" value="1998" />
+          <entry key="PLAIN_TEXT" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -78,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2499">
+            <state relative-caret-position="3043">
               <caret line="179" column="38" selection-start-line="179" selection-start-column="38" selection-end-line="179" selection-end-column="38" />
             </state>
           </provider>
@@ -87,8 +106,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/stats.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="391">
+              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
             </state>
           </provider>
         </entry>
@@ -167,7 +186,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="25" />
     <option name="y" value="27" />
     <option name="width" value="1287" />
@@ -179,6 +198,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,7 +225,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
@@ -330,16 +349,25 @@
       <workItem from="1541222520174" duration="4205000" />
       <workItem from="1541229341959" duration="8000" />
       <workItem from="1541229417937" duration="239000" />
+      <workItem from="1541231336885" duration="480000" />
     </task>
+    <task id="LOCAL-00001" summary="page change">
+      <created>1541231519070</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1541231519070</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21414000" />
+    <option name="totallyTimeSpent" value="21894000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="513" y="139" width="1287" height="782" extended-state="0" />
+    <frame x="0" y="25" width="1440" height="875" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15031646" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14961186" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -357,7 +385,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5028694" side_tool="true" weight="0.24038461" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49713057" visible="true" weight="0.2638037" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49713057" visible="true" weight="0.26442954" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -377,6 +405,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="page change" />
+    <option name="LAST_COMMIT_MESSAGE" value="page change" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -394,7 +426,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2499">
+        <state relative-caret-position="3043">
           <caret line="179" column="38" selection-start-line="179" selection-start-column="38" selection-end-line="179" selection-end-column="38" />
         </state>
       </provider>
@@ -411,8 +443,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/stats.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="391">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
         </state>
       </provider>
     </entry>
